@@ -7,7 +7,8 @@ res.then((data1)=>data1.json()).then((data2)=>{
     function call(){
         for(var i in data2){
             var x = document.getElementById("myText").value;
-             
+             console.log(data2[i].districts);
+            console.log(x);
              if(x==i){
                  var head1=document.getElementById("card-1")
                 
@@ -38,7 +39,14 @@ res.then((data1)=>data1.json()).then((data2)=>{
                  papu4.innerHTML=`population :${data2[i].meta["population"]}`
 
 
-             }    
+             } 
+
+           
+
+
+             
+
+                
                 
     }
 
@@ -56,19 +64,7 @@ btn.addEventListener("click",call)
      
 });
 
-// function shan(){
-//     var x = document.getElementById("myText").value;
-//     console.log(x);      
-// }
 
-// var btn=document.getElementById("button-1")
-//     btn.addEventListener("click",call)
-   
-// var head1=document.getElementById("card-1")
-// head1.addEventListener("mouseover"()=>{
-
-    
-// })
 
 var head7=document.getElementById("card-1-a")
 head7.addEventListener("mouseup",()=> head7.style.backgroundColor="white")
