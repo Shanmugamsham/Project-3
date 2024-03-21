@@ -7,6 +7,7 @@ res.then((data1)=>data1.json()).then((data2)=>{
     function call(){
         for(var i in data2){
             var x = document.getElementById("myText").value;
+            x=x.toUpperCase()
              console.log(data2[i].districts);
             console.log(x);
              if(x==i){
